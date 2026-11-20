@@ -174,7 +174,7 @@ Ask a natural language question across all ingested PDF documents.
 **Example:**
 ```json
 {
-  "question": "What is Nexla's approach to data integration?",
+  "question": "What does the document say about data integration?",
   "top_k": 5
 }
 ```
@@ -182,11 +182,11 @@ Ask a natural language question across all ingested PDF documents.
 **Response:**
 ```json
 {
-  "answer": "Nexla takes a metadata-driven approach to converge diverse integrations...",
+  "answer": "The document describes a metadata-driven approach to integrating diverse data sources...",
   "sources": [
     {"document": "overview.pdf", "page": 2, "section": "Introduction", "relevance_score": 0.89}
   ],
-  "query": "What is Nexla's approach to data integration?"
+  "query": "What does the document say about data integration?"
 }
 ```
 
