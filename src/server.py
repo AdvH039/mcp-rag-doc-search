@@ -36,7 +36,7 @@ logger = logging.getLogger("nexla-mcp")
 
 # --- Initialize MCP Server ---
 mcp = FastMCP(
-    "Nexla Document Intelligence",
+    "Document Intelligence",
     instructions=(
         "This server provides document Q&A tools over ingested PDF documents. "
         "Use 'list_documents' to see available documents, then 'query_documents' "
@@ -45,7 +45,7 @@ mcp = FastMCP(
 )
 
 # --- Initialize Components ---
-logger.info("Initializing Nexla MCP RAG Server...")
+logger.info("Initializing MCP RAG Server...")
 
 # Validate config
 warnings = config.validate()
@@ -246,5 +246,5 @@ def ingest_documents(directory: str = "./documents") -> str:
 # --- Entry Point ---
 
 if __name__ == "__main__":
-    logger.info("Starting Nexla MCP server on stdio transport...")
+    logger.info("Starting MCP server on stdio transport...")
     mcp.run()

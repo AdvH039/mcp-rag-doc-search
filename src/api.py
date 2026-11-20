@@ -60,7 +60,7 @@ async def lifespan(app: FastAPI):
         
     logger.info("MCP Client connection closed.")
 
-app = FastAPI(title="Nexla Document API", lifespan=lifespan)
+app = FastAPI(title="Document API", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
